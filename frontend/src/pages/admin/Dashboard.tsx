@@ -4,8 +4,7 @@ import {
 } from "lucide-react";
 import {
     BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid,
-    ResponsiveContainer, PieChart, Pie, Cell,
-    LineChart, Line, Legend
+    ResponsiveContainer, PieChart, Pie, Cell
 } from "recharts";
 import Navbar from "../../components/Navbar";
 import StatCard from "../../components/StatCard";

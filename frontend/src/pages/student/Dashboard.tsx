@@ -12,7 +12,7 @@ import { useAuthStore } from "../../store/authStore";
 import type { StudentDto, EnrollmentDto, PredictionResultDto, RiskLevel } from "../../types";
 
 export default function StudentDashboard() {
-    const { user } = useAuthStore();
+    const { } = useAuthStore();
     const [student, setStudent] = useState<StudentDto | null>(null);
     const [enrollments, setEnrollments] = useState<EnrollmentDto[]>([]);
     const [predictions, setPredictions] = useState<PredictionResultDto[]>([]);

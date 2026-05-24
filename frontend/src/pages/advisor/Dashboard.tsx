@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 import {
     BarChart, Bar, XAxis, YAxis, Tooltip,
-    CartesianGrid, ResponsiveContainer, Cell
+    CartesianGrid, ResponsiveContainer
 } from "recharts";
 import Navbar from "../../components/Navbar";
 import StatCard from "../../components/StatCard";
