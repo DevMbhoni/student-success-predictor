@@ -46,13 +46,13 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy.WithOrigins(
-                "http://localhost:5173",    
-                "https://your-app.vercel.app")
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+            "http://localhost:5173",
+            "https://student-success-predictor.vercel.app"
+        )
+        .AllowAnyHeader()
+        .AllowAnyMethod();
     });
 });
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
