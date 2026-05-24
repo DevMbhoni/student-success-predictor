@@ -95,18 +95,19 @@ builder.Services.AddHttpClient("MLService", client =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
 app.UseAuthentication(); 
 app.UseAuthorization();
 app.MapControllers();
-
+app.MapGet("/", () => new {
+    message = "Student Success Predictor API is running",
+    swagger = "/swagger",
+    version = "1.0.0"
+});
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
