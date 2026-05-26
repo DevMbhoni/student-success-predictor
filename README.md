@@ -11,7 +11,7 @@ An intelligent full-stack web platform that helps universities identify academic
 | Service | URL |
 |---|---|
 | **Frontend** | https://student-success-predictor-beige.vercel.app |
-| **.NET API** | https://student-success-api.onrender.com/swagger |
+| **.NET API** |https://student-success-api-5l9o.onrender.com/swagger |
 | **Python ML Service** | https://student-success-ml.onrender.com/api/health |
 
 > ⚠️ Hosted on Render's free tier — the API may take ~30 seconds to wake up after inactivity.
@@ -216,7 +216,7 @@ Recommendations are generated based on the weakest performance area:
 
 Full Swagger documentation available at:
 ```
-https://student-success-api.onrender.com/swagger
+https://https://student-success-api-5l9o.onrender.com/swagger
 ```
 
 ### Key Endpoints
@@ -285,7 +285,7 @@ StudentSuccessPredictor/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/student-success-predictor.git
+git clone https://github.com/DevMbhoni/student-success-predictor.git
 cd student-success-predictor
 ```
 
